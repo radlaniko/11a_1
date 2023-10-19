@@ -1,0 +1,63 @@
+Az egyszerű változókban egy adatot tároltunk.
+
+Az összetett változókban több, akár különböző adatot is. Ezek voltak a listák, 
+sor (tuple),szótár(dictionary).
+
+A függvények szolgáltak arra, hogy zárt programozási egységeket hozzunk létre. 
+Akárhányszor és akárhol meghívhattuk.
+
+Eljárás alapú programozás: függvényekkel valósítjuk meg, az adatok 
+"nem kiemelt jelentőségűek" a kód szempontjából. Sokkal fontosabbak
+azok a műveletek, amikkel előállítjuk a program eredményeit.
+
+Objektumok: azok az összetett adatszerkezetek, ahol nem csak az adatokat tárolom
+egy változóban, hanem az adatokon elvégezhető műveleteket is, azaz a függvényeket.
+
+Egy egységbe zárom őket (encapsulation). 
+
+Az objektumokban definiált függvények csak szabályozott módon hívhatók meg, ezért
+megkülönböztetjük őket a hagyományos függvényektől, úgy hívjuk őket, 
+hogy metódusok.
+
+Osztály(class): az objektum felépítését mondja meg.
+Az osztályban határozza meg a programozó, hogy az objektum hogyan működik.
+Az osztály az objektum típusa.
+
+Példány: az objektum változó neve.
+
+Szintaktika:
+class Osztaly_neve():
+	osztalyvaltozok
+	metodusok
+
+
+Példa osztályra:
+class Konyvek():
+	cim=szerzo=isbn=""
+	darab=0
+
+	def filldata(self):
+		cim=input("Adja meg a címet!\n")
+		szerzo=input("Adja meg a szerzot!\n")
+
+
+konyvpl=Konyvek()  # példány
+
+Ha a metódust magában a programban hívjuk meg, akkor NameError hibát kapunk.
+filldata()
+
+Ha a metódust az osztályból hívjuk meg, akkor TypeError hibát kapunk.
+Konyvek.filldata()
+
+A metódusokat a példányból tudom meghívni: ez kötés fogalma. A metódus meghíváshoz
+létre kell hoznom a példányt. 
+konyvpl.filldata()
+
+self: paraméter, mindig az aktuális példányra mutat. 
+
+Konstruktor metódus: (felépít) változó deklarálás, kezdeti érték beállítás.
+Közvetlenül nem lehet meghívni, amikor a példányt létrehozzuk, akkor fut le.
+def __init__(self):
+	kezdeti érték beállítás
+
+Destruktor metódus: takarítás, memóriaterületek felszabadítása
