@@ -61,3 +61,64 @@ def __init__(self):
 	kezdeti érték beállítás
 
 Destruktor metódus: takarítás, memóriaterületek felszabadítása
+
+
+Származtatás (Derivation):
+Amikor egy osztályt egy másikból hozunk létre az a származtatás.
+Amiből származtatunk azt szülőosztálynak nevezzük, amit származtattunk
+az a gyerekosztály.
+
+A gyerekosztály a szülőosztály összes tulajdonságát(változókat és metódusok)
+örökli. Ez az öröklés (inheritance).
+
+A gyerekosztály meg tudja hívni a szülőosztály tulajdonságait, attribútumait, 
+azonban a szülőosztály nem tudja meghívni a gyerekosztály attribútumait.
+
+Gyerekosztálynak is lehetnek gyerekosztályai, ebben az esetben a saját 
+gyerekosztályai szempontjából szülő osztály lesz.
+
+Gyerekosztálynak mindig több tulajdonsága van, mint a szülő osztálynak.
+
+Szintaktika:
+class Gyerekosztaly_neve(Szülőosztály_neve):
+	osztálytörzs
+
+Pl.: class Szuloosztaly():
+	def szuloosztaly_metodus():
+		print("Én vagyok a szülőosztály metódus")
+
+class Gyerekosztaly(Szuloosztaly):
+	def gyerekosztaly_metodus():
+		print("Én vagyok a gyerekosztály metódus")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
