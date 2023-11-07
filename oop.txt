@@ -92,6 +92,12 @@ class Gyerekosztaly(Szuloosztaly):
 		print("Én vagyok a gyerekosztály metódus")
 
 
+Osztályváltozó tulajdonságainak lekérdezése:
+
+- Szülőosztály lekérdezése: Osztaly_neve.__bases__ 
+- Osztály tulajdonságait adja meg: Osztaly_neve.__dict__
+
+
 
 
 
