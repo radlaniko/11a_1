@@ -1,0 +1,13 @@
+
+ev=int(input("Adjon meg egy évet:"))
+szokoev=[]
+if(ev<=1582):
+    for yy in range(ev,ev+100):
+        if(yy%4==0):
+            szokoev+=[yy]
+else:
+    for yy in range(ev,ev+100):
+        if(yy%4==0 and not (ev%100==0 and ev%400>0)):
+            szokoev+=[yy]
+
+print(szokoev, len(szokoev))
